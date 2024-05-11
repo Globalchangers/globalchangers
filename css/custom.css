@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* common css*/
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+
+/* header */
+.navbar-brand{
+    font-size: 1.5 rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/* home */
+.ban_sec {
+    width: 100%;
+    position: relative; /* Add position relative to the container */
+  }
+  
+  .ban_img {
+    width: 100%;
+  }
+  
+  .ban_img img {
+    width: 100%;
+  }
+  
+  .ban_text {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Move the text to the center horizontally */
+    transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
+    text-align: center; /* Align the text center */
+  }
+  
+  .ban_text strong {
+    font-weight: 800;
+    font-size: 60.22px; /* Global changers text */
+    line-height: 70px;
+    font-family: "Arvo";
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .ban_text strong span {
+    font-weight: 400;
+    font-size: 20.44px; /* above global changers */
+    line-height: 52px;
+    font-family: "Arvo";
+    letter-spacing: 3px;
+  }
+  
+  .ban_text p {
+    font-weight: 400;
+    font-size: 29.44px; /* Uniting youth slogan text */
+    line-height: 30px;
+    font-family: "Arvo", Regular 400 italic;
+    color: #fff;
+    margin: 7px 0 25px;
+  }
+  
+  .ban_text a {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 25.39px; /* Learn more text */
+    line-height: 24px;
+    font-family: "Arvo";
+    background: #f36710;
+    border-radius: 26px;
+    color: #fff;
+    padding: 12px 28px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .ban_text a:hover {
+    background: #261302;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .ban_text p {
+      font-size: 21px;
+    }
+  }
+  
+  /* Add other media queries here */  
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .ban_text p {
+      font-size: 17px;
+    }
+    .ban_text strong {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .ban_text strong span {
+      font-size: 37px;
+    }
+    .ban_text a {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .ban_text strong {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    .ban_text strong span {
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: 2px;
+    }
+    .ban_text p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .ban_text a {
+      font-size: 13.39px;
+      line-height: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ban_img img {
+      min-height: 290px;
+      object-fit: cover;
+    }
+  }
+  
+  @media only screen and (max-width: 575px) {
+    .ban_text strong {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .ban_text strong span {
+      font-size: 22px;
+      line-height: 31px;
+      letter-spacing: 1px;
+    }
+    .ban_text {
+      left: 2%;
+    }
+  }
+  
+
+/* About-Us */
+#About-Us {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0; /* Background color of the box */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.about-us-container {
+    margin-top: 20px; /* Adjust the value as needed for the desired space */
+  }
+  
+  .about-us h2 {
+    margin-top: 0; /* Remove default top margin for the heading */
+  }
+  
+
+#About-Us .title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: bold;
+    margin-top: 40px;
+}
+  
+/* Applying Lora font to the "About-Us" paragraph */
+#About-Us .about {
+    font-family: 'Lora';
+    font-size: 40px; 
+    margin-bottom: 0;
+    color: #000000;
+   
+    
+}
+
+/* Styling for the Get Involved box */
+.get-involved-box {
+    background-color: #f9f9f9; /* Background color of the box */
+    border: 1px solid #ddd; /* Border color and thickness */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 30px; /* Bottom margin to create space between sections */
+    width: 100%; /* Make the box cover the full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Styles for the Get Involved title */
+#get-involved-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    margin-top: 0; /* Remove default margin */
+}
+
+/* Custom CSS to reduce gap between cards */
+#Get-Involved .row [class^="col-"] {
+    padding-right: 10px; /* Adjust padding to reduce the gap between cards */
+    padding-left: 10px; /* Adjust padding to reduce the gap between cards */
+}
+
+/* Centering the cards */
+#Get-Involved .card {
+    margin: 0 auto; /* Centers the card horizontally */
+}
+
+/* Styling the card images */
+#Get-Involved .card img {
+    height: 150px;
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures image is centered */
+    margin: 0 auto; /* Centers image horizontally */
+}
+
+/* Adjusting space between cards */
+#Get-Involved .py-3 {
+    padding-bottom: 20px; /* Increase or decrease to adjust space between cards */
+}
+
+/* contact */
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#contact form{
+    width: 100%;
+}
+#contact form .submit-message{
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #010203;
+    color: #fff;
+}
+
+/* #Projects */
+.section-projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-projects .heading .title {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  color: #2e3135;
+}
+
+.section-projects .heading .title:before,
+.section-projects .heading .title:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: red;
+  display: inline-block;
+}
+
+.section-projects .heading .title:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-projects .heading .title:before {
+  margin: 0 15px 10px 0;
+}
+
+.project-nav {
+  padding-top: 32px;
+}
+
+.project-nav .nav {
+  border: none;
+  justify-content: space-evenly;
+}
+
+.project-nav .nav .nav-item {
+  padding: 0 4px;
+  width: 100%;
+  flex: 1 0 0%;
+}
+
+.project-nav .nav .nav-item .nav-link {
+  padding: 15px 0;
+  transition: 0.3s;
+  color: #52565e;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 4px solid #e2e4e6;
+}
+
+.project-nav .nav .nav-item .nav-link.active {
+  color: #eb532d;
+  background-color: transparent;
+  border-color: #eb532d;
+}
+
+.project-tab-content .tab-content .tab-pane {
+  padding-left: 4px;
+}
+
+.project-tab-content .tab-content .tab-pane .title {
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.project-tab-content .tab-content .tab-pane .title:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #eb532d;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* Get-In-Touch */
+#Get-In-Touch {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0; /* Background color of the box */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+#Get-In-Touch-container {
+    margin-top: 20px; /* Adjust the value as needed for the desired space */
+}
+
+#Get-In-Touch h2 {
+    margin-top: 0; /* Remove default top margin for the heading */
+}
+
+/* Style for the submit button */
+#Get-In-Touch button[type="submit"] {
+    background-color: #FE612C;
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+#Get-In-Touch button[type="submit"]:hover {
+    background-color: black; /* Change this to a darker shade for hover effect */
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height:auto;
+    padding: 2rem 0 4 rem;
+}
+.back-to-top:hover i {
+    color: black;
+}
+
+
